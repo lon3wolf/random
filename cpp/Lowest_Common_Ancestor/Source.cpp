@@ -10,6 +10,8 @@
 
 using namespace std;
 
+
+// Just a verification code
 void TestSimpleTree()
 {
     std::cout << "Solution is running" << std::endl;
