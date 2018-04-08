@@ -12,10 +12,14 @@ using namespace std;
 
 int main()
 {
-    Tree* ptree = new Tree(2);
-    ptree->root->printNode();
-    
-    std::cout << "This is a fucking test." << std::endl;
+    std::cout << "Solution is running" << std::endl;
+    SimpleTree tree(20, 2);
+    tree.MakeRight(2, 3);
+    tree.MakeLeft(2, 1);
 
-	return 0;
+    tree.PrintTree();
+
+    std::cout << "Solution completed" << std::endl;
+
+    return 0;
 }

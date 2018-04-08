@@ -32,6 +32,7 @@ int SimpleTree::MakeRight(int p, int d)
     {
         if(arr[i] == p)
             break;
+        i++;
     }
 
     if((2*i + 1) < arr[0])
@@ -52,6 +53,7 @@ int SimpleTree::MakeLeft(int p, int d)
     {
         if(arr[i] == p)
             break;
+        i++;
     }
 
     if(2*i < arr[0])
@@ -67,5 +69,14 @@ int SimpleTree::MakeLeft(int p, int d)
 
 void SimpleTree::PrintTree()
 {
-    
+    // not sure how I want to display it right now,
+    // just print out the array as of now
+
+    std::cout << std::endl << "Capacity : " << arr[0] << std::endl;
+    for(int i=1; i < arr[0]; i++)
+    {
+        std::cout << arr[i] << " ";
+    } 
+
+    std::cout << std::endl; 
 }
