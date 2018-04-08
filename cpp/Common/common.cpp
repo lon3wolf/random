@@ -37,6 +37,11 @@ int SimpleTree::GetIndex(int p)
     return i;
 }
 
+int SimpleTree::GetRoot()
+{
+    return arr[1];
+}
+
 int SimpleTree::MakeRight(int p, int d)
 {
     int i = GetIndex(p);

@@ -40,5 +40,7 @@ class SimpleTree
 
         int RightNode(int p);
 
+        int GetRoot();
+
         void PrintTree();
 };
