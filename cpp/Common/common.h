@@ -1,4 +1,4 @@
-/// CL /c /Fo common.obj common.cpp /EHsc
+/// cl /c /Fo common.cpp /EHsc
 #include <iostream>
 
 class Node
@@ -21,10 +21,13 @@ class Tree
 };
 
 /// Simple binary tree using array
+/// only use unique elements, duplicate entries will fail this
 class SimpleTree
 {
     private:
         int* arr;
+
+        int GetIndex(int p);
 
     public:
         SimpleTree(int cap, int root); //cap: capacity
@@ -32,6 +35,10 @@ class SimpleTree
         int MakeLeft(int p, int d);
         
         int MakeRight(int p, int d);
+
+        int LeftNode(int p);
+
+        int RightNode(int p);
 
         void PrintTree();
 };

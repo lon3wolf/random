@@ -25,15 +25,21 @@ SimpleTree::SimpleTree(int cap, int root) //cap: capacity
     arr[1] = root;
 }
 
+int SimpleTree::GetIndex(int p)
+{
+    int i = 0;
+    for(i = 1; i < arr[0]; i++)
+    {
+        if(p == arr[i])
+            break;
+    }
+
+    return i;
+}
+
 int SimpleTree::MakeRight(int p, int d)
 {
-    int i = 1;
-    while(i < arr[0])
-    {
-        if(arr[i] == p)
-            break;
-        i++;
-    }
+    int i = GetIndex(p);
 
     if((2*i + 1) < arr[0])
     {
@@ -48,13 +54,7 @@ int SimpleTree::MakeRight(int p, int d)
 
 int SimpleTree::MakeLeft(int p, int d)
 {
-    int i = 1;
-    while(i < arr[0])
-    {
-        if(arr[i] == p)
-            break;
-        i++;
-    }
+    int i = GetIndex(p);
 
     if(2*i < arr[0])
     {
@@ -64,6 +64,32 @@ int SimpleTree::MakeLeft(int p, int d)
     else
     {
         return -1;
+    }
+}
+
+int SimpleTree::LeftNode(int p)
+{
+    int i = GetIndex(p);
+    if(2*i < arr[0])
+    {
+        return arr[2*i];
+    }
+    else
+    {
+        return NULL;
+    }
+}
+
+int SimpleTree::RightNode(int p)
+{
+    int i = GetIndex(p);
+    if(2*i+1 < arr[0])
+    {
+        return arr[2*i + 1];
+    }
+    else
+    {
+        return NULL;
     }
 }
 

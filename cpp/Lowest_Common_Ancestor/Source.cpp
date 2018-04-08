@@ -10,16 +10,24 @@
 
 using namespace std;
 
-int main()
+void TestSimpleTree()
 {
     std::cout << "Solution is running" << std::endl;
     SimpleTree tree(20, 2);
     tree.MakeRight(2, 3);
     tree.MakeLeft(2, 1);
 
+    std::cout << "Left: " << tree.LeftNode(2) << endl;
+    std::cout << "Right: " << tree.RightNode(2) << endl;
+
     tree.PrintTree();
 
     std::cout << "Solution completed" << std::endl;
+}
 
+int main()
+{
     return 0;
 }
+
+
