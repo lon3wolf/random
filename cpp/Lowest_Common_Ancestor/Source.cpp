@@ -94,7 +94,7 @@ int main()
     std::cout << "LCA of 8 and 14: " << FindLCA(tree, 8, 14) << std::endl;
     
     // LCA of 10 and 22
-    std::cout << "LCA of 10 and 22: " << FindLCA(tree, 10, 22) << std::endl;
+    std::cout << "LCA of 10 and 22:     " << FindLCA(tree, 10, 22) << std::endl;
 
     return 0;
 }
