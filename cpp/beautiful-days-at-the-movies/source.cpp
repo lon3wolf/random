@@ -1,7 +1,7 @@
 //https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem
 // 
-// Complexity : O(n)
-// compile command => cl source.cpp /o test.exe
+// Complexity : NA
+// compile command => cl /EHsc source.cpp /o test.exe
 
 // #include <bits/stdc++.h>
 #include <vector>
