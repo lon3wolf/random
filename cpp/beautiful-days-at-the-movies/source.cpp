@@ -1,32 +1,52 @@
 //https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem
 // 
 // Complexity : O(n)
-// compile command => cl contigousSum.cpp /o test.exe
+// compile command => cl source.cpp /o test.exe
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+#include <vector>
+#include <iostream>
+#include <string.h>
 
 using namespace std;
 
 vector<string> split_string(string);
 const int maxNumber = 1000000;
 
-int reverseNumber(int i)
+int reverseNumber(const int i)
 {
     int p = i;
     int reverse = 0;
     int unit = 1;
-    for(int n = maxNumber; n != 0 && i != 0; n=n/10)
-    {
-        int k = i/n;
+    /*
+        250
 
-        if(k == 0 && unit == 1)
-            continue;
-        else
-        {
-            i = i - (k*n);
-            reverse += k*unit;
-            unit = unit * 10;
+        1000000
+
+        0, 1000000 => 250
+        0, 100000 => 250
+        0, 10000 => 250
+        0, 1000 => 
+        2, 100 => 50
+        5, 10 => 0
+        0, 1 => 0
+        => 52
+    */
+
+    for(int n = maxNumber; p != 0; ) ///   n=10 p=50  reverse=2   unit=1 =>  52
+    {
+        int k = (p/n)*(n);      // k = 50
+        p = p - k;              // p = 0
+        k = k/n;                // k = 2
+        n = n/10;               // n = 10
+        k = (unit)*k;
+
+        if(k != 0 || unit != 1)
+        {   
+            unit *= 10;
         }
+
+        reverse += k;
     }
 
     // cout << "Number: " << p << " reverse: " << reverse << endl;
@@ -40,10 +60,8 @@ int beautifulDays(int i, int j, int k)
     for(int a=i; a<=j; a++)
     {
         int rev = reverseNumber(a);
-        //cout << "Number" << a << " reverse  " << rev << endl;
-        double calc =  (double)(a - rev)/(double)k;
-        cout << floor(calc) <<  " " << ceil(calc) << endl;
-        calc = floor(calc) - ceil(calc);
+        cout << "Number" << a << " reverse  " << rev << endl;
+        int calc =  std::abs(a - rev) %k;
         if(calc == 0)
         {
             //cout << "Beautiful Day!" << endl;
@@ -57,53 +75,31 @@ int beautifulDays(int i, int j, int k)
  
 int main()
 {
-    ofstream fout(getenv("OUTPUT_PATH"));
 
-    string ijk_temp;
-    getline(cin, ijk_temp);
+    try
+    {
+        /*
+        int i = 949488;
 
-    vector<string> ijk = split_string(ijk_temp);
+        int j = 1753821;
 
-    int i = stoi(ijk[0]);
+        int k = 5005440;
+        */
+        int i = 10;
 
-    int j = stoi(ijk[1]);
+        int j = 201;
 
-    int k = stoi(ijk[2]);
+        int k = 10;
 
-    int result = beautifulDays(i, j, k);
+        int result = beautifulDays(i, j, k);
 
-    fout << result << "\n";
-
-    fout.close();
+        cout << result << "\n";
+    }
+    catch(char* ex)
+    {
+        cout << "Exception";
+        cout << ex;
+    }
 
     return 0;
-}
-
-vector<string> split_string(string input_string) {
-    string::iterator new_end = unique(input_string.begin(), input_string.end(), [] (const char &x, const char &y) {
-        return x == y and x == ' ';
-    });
-
-    input_string.erase(new_end, input_string.end());
-
-    while (input_string[input_string.length() - 1] == ' ') {
-        input_string.pop_back();
-    }
-
-    vector<string> splits;
-    char delimiter = ' ';
-
-    size_t i = 0;
-    size_t pos = input_string.find(delimiter);
-
-    while (pos != string::npos) {
-        splits.push_back(input_string.substr(i, pos - i));
-
-        i = pos + 1;
-        pos = input_string.find(delimiter, i);
-    }
-
-    splits.push_back(input_string.substr(i, min(pos, input_string.length()) - i + 1));
-
-    return splits;
 }
