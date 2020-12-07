@@ -30,7 +30,20 @@
 *.exe
 *.out
 *.app
-
+*.bin
+*.ipch
+*.nupkg
+*.pdb
+*.log
+*.tlog
+*.idb
+*.user
+*.ilk
+*.exe.*
+*.cache
 
 # Custom
 settings.json
+cpp/.vscode
+*.filters
+*.suo

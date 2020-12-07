@@ -1,0 +1,6 @@
+E:\Personal\Prep\MatrixRotation\bin\Debug\MatrixRotation.exe.config
+E:\Personal\Prep\MatrixRotation\bin\Debug\MatrixRotation.exe
+E:\Personal\Prep\MatrixRotation\bin\Debug\MatrixRotation.pdb
+E:\Personal\Prep\MatrixRotation\obj\Debug\MatrixRotation.csprojResolveAssemblyReference.cache
+E:\Personal\Prep\MatrixRotation\obj\Debug\MatrixRotation.exe
+E:\Personal\Prep\MatrixRotation\obj\Debug\MatrixRotation.pdb

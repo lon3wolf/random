@@ -1,0 +1,12 @@
+C:\Users\satomar\Source\Repos\Prep\SingletonCSharp\bin\Debug\SingletonCSharp.exe.config
+C:\Users\satomar\Source\Repos\Prep\SingletonCSharp\obj\Debug\SingletonCSharp.csprojResolveAssemblyReference.cache
+C:\Users\satomar\Source\Repos\Prep\SingletonCSharp\bin\Debug\SingletonCSharp.exe
+C:\Users\satomar\Source\Repos\Prep\SingletonCSharp\bin\Debug\SingletonCSharp.pdb
+C:\Users\satomar\Source\Repos\Prep\SingletonCSharp\obj\Debug\SingletonCSharp.exe
+C:\Users\satomar\Source\Repos\Prep\SingletonCSharp\obj\Debug\SingletonCSharp.pdb
+E:\Personal\Prep\SingletonCSharp\bin\Debug\SingletonCSharp.exe.config
+E:\Personal\Prep\SingletonCSharp\bin\Debug\SingletonCSharp.exe
+E:\Personal\Prep\SingletonCSharp\bin\Debug\SingletonCSharp.pdb
+E:\Personal\Prep\SingletonCSharp\obj\Debug\SingletonCSharp.exe
+E:\Personal\Prep\SingletonCSharp\obj\Debug\SingletonCSharp.pdb
+E:\Personal\Prep\SingletonCSharp\obj\Debug\SingletonCSharp.csprojResolveAssemblyReference.cache

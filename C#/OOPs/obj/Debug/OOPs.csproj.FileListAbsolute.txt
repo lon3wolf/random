@@ -1,0 +1,11 @@
+C:\Users\satomar\Source\Repos\Prep\OOPs\bin\Debug\OOPs.exe.config
+C:\Users\satomar\Source\Repos\Prep\OOPs\bin\Debug\OOPs.exe
+C:\Users\satomar\Source\Repos\Prep\OOPs\bin\Debug\OOPs.pdb
+C:\Users\satomar\Source\Repos\Prep\OOPs\obj\Debug\OOPs.exe
+C:\Users\satomar\Source\Repos\Prep\OOPs\obj\Debug\OOPs.pdb
+E:\Personal\Prep\OOPs\bin\Debug\OOPs.exe.config
+E:\Personal\Prep\OOPs\bin\Debug\OOPs.exe
+E:\Personal\Prep\OOPs\bin\Debug\OOPs.pdb
+E:\Personal\Prep\OOPs\obj\Debug\OOPs.csprojResolveAssemblyReference.cache
+E:\Personal\Prep\OOPs\obj\Debug\OOPs.exe
+E:\Personal\Prep\OOPs\obj\Debug\OOPs.pdb

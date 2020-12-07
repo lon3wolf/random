@@ -1,0 +1,7 @@
+C:\Users\satomar\Source\Repos\Prep\SnakesnLadders\obj\Debug\SnakesnLadders.csprojResolveAssemblyReference.cache
+E:\Personal\Prep\SnakesnLadders\obj\Debug\SnakesnLadders.csprojResolveAssemblyReference.cache
+E:\Personal\Prep\SnakesnLadders\bin\Debug\SnakesnLadders.exe.config
+E:\Personal\Prep\SnakesnLadders\bin\Debug\SnakesnLadders.exe
+E:\Personal\Prep\SnakesnLadders\bin\Debug\SnakesnLadders.pdb
+E:\Personal\Prep\SnakesnLadders\obj\Debug\SnakesnLadders.exe
+E:\Personal\Prep\SnakesnLadders\obj\Debug\SnakesnLadders.pdb
